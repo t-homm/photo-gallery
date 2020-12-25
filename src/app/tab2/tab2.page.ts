@@ -21,8 +21,8 @@ export class Tab2Page {
   }
 
   async ngOnInit() {
-    　//写真を削除
-    　Storage.clear();
+    　//写真を削除 削除する時だけ下記行を生かす。
+    // 　Storage.clear();
       await this.photoService.loadSaved();
   }
 }
